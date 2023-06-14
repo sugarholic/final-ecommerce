@@ -1,0 +1,32 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "final project ecommerce",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "set PORT = 8080 && node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@formspree/react": "^2.4.2",
+    "bcrypt": "^5.1.0",
+    "braintree": "^3.16.0",
+    "concurrently": "^8.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.2",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "gh-pages": "^5.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "slugify": "^1.6.6"
+  }
+}
